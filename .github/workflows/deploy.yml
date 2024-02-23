@@ -1,0 +1,29 @@
+name: Deploy Collision
+
+on:
+  push:
+    branches: [production]
+
+  pull_request:
+    branches: [production]
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+
+    steps:
+      
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Building the package
+        run: npm run build
+
+      - name: Close the server
+        continue-on-error: true 
+        run: pm2 delete server
+
+      - name: Start the server
+        run: pm2 start dist/server.js --name server 

@@ -1,0 +1,1 @@
+{"version":3,"file":"ajax.route.js","sourceRoot":"","sources":["../../src/routes/ajax.route.ts"],"names":[],"mappings":";;AACA,qCAAiC;AAEjC,6DAA6D;AAG7D,MAAM,SAAS;IACP,IAAI,GAAG,OAAO,CAAC;IACf,MAAM,GAAG,gBAAM,EAAE,CAAC;IACzB,gDAAgD;IAEhD;QACC,IAAI,CAAC,gBAAgB,EAAE,CAAC;IACzB,CAAC;IAEO,gBAAgB;IAExB,CAAC;CAGD;AAED,kBAAe,SAAS,CAAC"}

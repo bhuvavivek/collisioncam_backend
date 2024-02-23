@@ -1,0 +1,34 @@
+import { Response } from "express";
+import { RequestWithUser } from "../../interfaces/auth.interface";
+declare class UserController {
+    recentActivty(req: RequestWithUser, res: Response): Promise<void>;
+    footageSalesChart(req: RequestWithUser, res: Response): Promise<void>;
+    totalFootageSales(req: RequestWithUser, res: Response): Promise<void>;
+    sendRequest(req: RequestWithUser, res: Response): Promise<Response<any, Record<string, any>>>;
+    getRequest(req: RequestWithUser, res: Response): Promise<void>;
+    getSingleRequest(req: RequestWithUser, res: Response): Promise<Response<any, Record<string, any>>>;
+    testPdfUpload(req: RequestWithUser, res: Response): Promise<void>;
+    updateRequest(req: RequestWithUser, res: Response): Promise<Response<any, Record<string, any>>>;
+    createCheckoutSession(req: RequestWithUser, res: Response): Promise<void>;
+    deleteRequest(req: RequestWithUser, res: Response): Promise<Response<any, Record<string, any>>>;
+    becomeAffliate(req: RequestWithUser, res: Response): Promise<Response<any, Record<string, any>>>;
+    getAffliate(req: RequestWithUser, res: Response): Promise<void>;
+    getSingleAffliate(req: RequestWithUser, res: Response): Promise<Response<any, Record<string, any>>>;
+    updateAffliate(req: RequestWithUser, res: Response): Promise<Response<any, Record<string, any>>>;
+    getAffiliatePerformance(req: RequestWithUser, res: Response): Promise<void>;
+    deleteAffliate(req: RequestWithUser, res: Response): Promise<Response<any, Record<string, any>>>;
+    sellClaim(req: RequestWithUser, res: Response): Promise<Response<any, Record<string, any>>>;
+    getSellClaim(req: RequestWithUser, res: Response): Promise<void>;
+    getSingleSellClaim(req: RequestWithUser, res: Response): Promise<Response<any, Record<string, any>>>;
+    updateSellClaim(req: RequestWithUser, res: Response): Promise<Response<any, Record<string, any>>>;
+    deleteSellClaim(req: RequestWithUser, res: Response): Promise<Response<any, Record<string, any>>>;
+    partnerFirms(req: RequestWithUser, res: Response): Promise<Response<any, Record<string, any>>>;
+    getPartnerFirms(req: RequestWithUser, res: Response): Promise<void>;
+    getSinglePartnerFirm(req: RequestWithUser, res: Response): Promise<Response<any, Record<string, any>>>;
+    updatePartnerfirm(req: RequestWithUser, res: Response): Promise<Response<any, Record<string, any>>>;
+    deletePartnerfirm(req: RequestWithUser, res: Response): Promise<Response<any, Record<string, any>>>;
+    getCapture(req: RequestWithUser, res: Response): Promise<void>;
+    addCapture(req: RequestWithUser, res: Response): Promise<Response<any, Record<string, any>>>;
+    updateCapture(req: RequestWithUser, res: Response): Promise<Response<any, Record<string, any>>>;
+}
+export default UserController;

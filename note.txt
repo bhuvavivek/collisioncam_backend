@@ -1,0 +1,11 @@
+"scripts": {
+    "start": "npm run build && cross-env NODE_ENV=production node dist/server.js",
+    "uat": "cross-env NODE_ENV=uat nodemon",
+    "dev": "cross-env NODE_ENV=development nodemon",
+    "build": "npm run clean && tsc && npx tsc-alias && npm run copy-files",
+    "test": "jest --forceExit --detectOpenHandles",
+    "lint": "eslint --ignore-path .gitignore --ext .ts src/",
+    "lint:fix": "npm run lint -- --fix",
+    "clean": "sudo rm -rf dist/",
+    "copy-files": "sudo cp -r src/public/ src/views/ dist/ && echo 'Build created successfully'"
+  },

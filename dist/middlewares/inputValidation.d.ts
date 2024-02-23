@@ -1,0 +1,17 @@
+export declare const adminRegisterInput: import("express-validator").ValidationChain[];
+export declare const adminLoginInput: import("express-validator").ValidationChain[];
+export declare const adminForgotInput: import("express-validator").ValidationChain[];
+export declare const adminResetInput: import("express-validator").ValidationChain[];
+export declare const adminChangeInput: import("express-validator").ValidationChain[];
+export declare const adminGeneralInput: import("express-validator").ValidationChain[];
+export declare const uploadFootageInput: import("express-validator").ValidationChain[];
+export declare const requestInput: import("express-validator").ValidationChain[];
+export declare const requestUpdateInput: import("express-validator").ValidationChain[];
+export declare const becomeAffliateInput: import("express-validator").ValidationChain[];
+export declare const subscriptionInput: import("express-validator").ValidationChain[];
+export declare const subscriptionApprovedInput: import("express-validator").ValidationChain[];
+export declare const affliateUpdateInput: import("express-validator").ValidationChain[];
+export declare const sellInput: import("express-validator").ValidationChain[];
+export declare const partnerInput: import("express-validator").ValidationChain[];
+export declare const notificationSettingsInput: import("express-validator").ValidationChain[];
+export declare const requestSettingsInput: import("express-validator").ValidationChain[];
